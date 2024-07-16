@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: #1F2833;
+    width : 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-container{
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    text-align: left;
+    width: 60%;
+    border: 2px solid #fff;
+    font-family: "Montserrat";
+    height: 500px;
+    padding: 0 0 0 25px;
+}
+
+.contact_form{
+    display: flex;
+    /* justify-content: space-around; */
+    /* align-items: center; */
+    width: 50%;
+    text-align: center;
+    flex-direction: column;
+}
+.contact_form h1{
+    display: flex;
+    color: #fff;
+    font-size: 30px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    /* align-items: flex-start; */
+    justify-content: left;
+}
+.form{
+    display: flex;
+    justify-content: space-between;
+    align-items: left; 
+    flex-direction: column;
+    height: 100%;
+}
+
+.contact-input{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 35px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 65px 0 35px ;
+}
+
+.text-input{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 65px 0 35px ;
+}
+
+.contact-btn{
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+    margin: 30px 0 0 35px;
+    height: 35px;
+    width: 100px;
+    border: none;
+    font-size: 20px;
+}
+
+.contact_details{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: left;
+    width: 50%;
+    text-align: center;
+    background-color: #fff;
+    flex-direction: column;
+    height: 100%;
+    padding: 0 0 0 30px;
+}
+
+.contact_details p{
+    padding-left: 10px;
+}
+
+.tel{
+    display: flex;
+    flex-direction: row;
+}
+
+.email{
+    display: flex;
+    flex-direction: row;
+}
+
+.location{
+    display: flex;
+    flex-direction: row;
+}
