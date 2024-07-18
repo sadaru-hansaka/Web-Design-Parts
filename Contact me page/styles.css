@@ -23,15 +23,17 @@ body{
     font-family: "Montserrat";
     height: 500px;
     padding: 0 0 0 25px;
+    border-radius: 20px;
 }
 
 .contact_form{
     display: flex;
     /* justify-content: space-around; */
     /* align-items: center; */
-    width: 50%;
+    width: 60%;
     text-align: center;
     flex-direction: column;
+    border-radius: 20px;
 }
 .contact_form h1{
     display: flex;
@@ -52,6 +54,7 @@ body{
 }
 
 .contact-input{
+    padding: 10px;
     display: flex;
     flex-direction: column;
     width: 80%;
@@ -59,55 +62,107 @@ body{
     justify-content: space-between;
     align-items: center;
     margin: 20px 65px 0 35px ;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    font-weight: 100;
+}
+
+.contact-input::placeholder, .text-input::placeholder{
+    color: #fff;
+    opacity: 0.6;
 }
 
 .text-input{
+    padding : 10px;
     display: flex;
     flex-direction: column;
     width: 80%;
     justify-content: space-between;
     align-items: center;
     margin: 20px 65px 0 35px ;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
 }
 
 .contact-btn{
-    display: flex;
-    justify-content: flex-start;
-    align-items: left;
+    text-align: center;
     margin: 30px 0 0 35px;
     height: 35px;
     width: 100px;
     border: none;
     font-size: 20px;
+    border-radius: 5px;
 }
 
 .contact_details{
     display: flex;
     justify-content: space-evenly;
     align-items: left;
-    width: 50%;
+    width: 40%;
     text-align: center;
     background-color: #fff;
     flex-direction: column;
     height: 100%;
     padding: 0 0 0 30px;
+    border-radius: 20px;
 }
 
 .contact_details p{
     padding-left: 10px;
 }
 
+.contact_details h1{
+    font-size: 30px;
+}
+
+.contact-numbers{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: left;
+    margin: 20px 0 0 10px
+}
+.Emails{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: left;
+    margin: 20px 0 0 10px
+}
+
+.personal-location{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: left;
+    margin: 20px 0 0 10px
+}
+
 .tel{
     display: flex;
     flex-direction: row;
+    margin-left: 50px;
+    padding-top: 10px;
 }
 
 .email{
     display: flex;
     flex-direction: row;
+    margin-left: 50px;
+    padding-top: 10px;
 }
 
 .location{
     display: flex;
     flex-direction: row;
+    margin-left: 50px;
+    padding-top: 10px;
 }
