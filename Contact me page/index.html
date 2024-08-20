@@ -3,74 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact me</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-    </script>
-    <script src="script.js"></script>
-    <script type="text/javascript">
-        (function(){
-            emailjs.init({
-                publicKey: "public key",   //enter public key
-            });
-        })();
-    </script>
-    
-
-
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <div class="contact-container">
-        <div class="contact_form">
-            <h1>Contact me</h1>
-            <form class="form">
-                <input type="text" id="name" name="name" placeholder="Your Name" class="contact-input" required>
-                <input type="email" id="email" name="email" placeholder="Your Email" class="contact-input" required>
-                <input type="text" id="subject" name="subject" placeholder="subject" class="contact-input" required>
-                <textarea name="message" id="message" placeholder="Your Message" class="text-input" rows="8" required></textarea> 
+    <div class="contact" id="contact">
+        <div class="contact-container">
+            <div class="contact_form">
+                <h1>Contact me</h1>
+                <form action="" class="form">
+                    <input type="text" id="name" name="name" placeholder="Your Name" class="contact-input" required>
+                    <input type="email" id="email" name="email" placeholder="Your Email" class="contact-input" required>
+                    <input type="text" id="subject" name="Subject" placeholder="Subject" class="contact-input" required>
+                    <textarea name="message" id="message" placeholder="Your Message" class="text-input" rows="8" required></textarea> 
+                    <input type="submit" value="Send" class="contact-btn"> 
+                </form>
                 
-            </form>
-            <button class="contact-btn" onclick="sendMail()">Send</button>
-            
-        </div>
-        <div class="contact_details">
-            <div class="contact-numbers">
-                <h1>Contact Numbers</h1>
-                <div class="tel">
-                    <i class="fa-solid fa-phone"></i>
-                    <p>+94 74 285 1910</p>
-                </div>
-                <div class="tel">
-                    <i class="fa-brands fa-whatsapp"></i>
-                    <p>+94 75 829 3426</p>
-                </div>
             </div>
-            <div class="Emails">
-                <h1>Email</h1>
-                <div class="email">
-                    <i class="fa-solid fa-envelope"></i>
-                    <p>hansakas305@gmail.com</p>
+            <div class="contact_details">
+                <div class="contact-numbers">
+                    <h1>Contact Numbers</h1>
+                    <div class="tel">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>+94 74 285 1910</p>
+                    </div>
+                    <div class="tel">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <p>+94 75 829 3426</p>
+                    </div>
                 </div>
-                <div class="email">
-                    <i class="fa-solid fa-envelope"></i>
-                    <p>sadaru.20222067@iit.ac.lk</p>
+                <div class="Emails">
+                    <h1>Email</h1>
+                    <div class="email">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>hansakas305@gmail.com</p>
+                    </div>
+                    <div class="email">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>sadaru.20222067@iit.ac.lk</p>
+                    </div>
                 </div>
+                
+                <div class="personal-location">
+                    <h1>Address</h1>
+                    <div class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>140/B Gedarawatta, Watareka East, Hapugala, Wackwella, Galle, Sri Lanka.</p>
+                    </div>
+                </div>
+                
             </div>
-            
-            <div class="personal-location">
-                <h1>Address</h1>
-                <div class="location">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <p>140/B Gedarawatta, Watareka East, Hapugala, Wackwella, Galle, Sri Lanka.</p>
-                </div>
-            </div>
-            
-        </div>
     </div>
-
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script type="module" src="script.js"></script>
 </body>
 </html>
